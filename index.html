@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <title>DAR</title>
+</head>
+<body>
+    
+    <div class="header">
+        <h1>Daily Activity Report Helper</h1>
+    </div>
+<form action="/Day1/DailyActivityReport/index.html" method="GET">
+    <div class="main">
+        <div class="container">
+            <div class="chooseActivity">
+                <select name="activity" id="activity">
+                    <option value="WRITER ON SITE">On site</option>
+                    <option value="WRITER ON DUTY">On Duty</option>
+                    <option value="WRITER CONDUCTED PATROL">On Patrol</option>
+                    <option value="WRITER COMPLETED PATROL">Done Patrol</option>
+                    <option value="WRITER RECEIEVED PHONE CALL FROM OPID - ">Phone Call Monitoring </option>
+                    <option value="WRITER OFF DUTY">Off Duty</option>
+                </select>
+            </div>
+            <div class="submit">
+                <button type="button" onclick="submitTextToTextArea()">Submit to textarea</button>
+               
+            </div>
+            <div class="textarea">
+                <textarea class="entryDesign" name="text" id="textarea" cols="30" rows="10"></textarea>
+            </div>
+           
+        </div>
+    </div>
+</form>
+<div class="submit">
+              
+    <button type="button">Download content</button>
+</div>
+
+</body>
+</html>

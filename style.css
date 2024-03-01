@@ -1,0 +1,48 @@
+*{
+    text-align: center;
+    margin: 0;
+    padding:0;
+}
+.header{
+    margin: 20px;
+}
+.main{
+    margin: 20px;
+}
+.entryDesign{
+    margin-top: 20px;
+    text-align: left ;
+}
+button{
+    margin: 20px;
+    padding: 10px;
+
+}
+
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .header,
+    .main,
+    .entryDesign,
+    button {
+        margin: 10px; /* Adjust margin for smaller screens */
+    }
+
+    button {
+        padding: 8px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .header,
+    .main,
+    .entryDesign,
+    button {
+        margin: 5px; /* Further adjust margin for even smaller screens */
+    }
+
+    button {
+        padding: 6px; /* Further adjust padding for even smaller screens */
+    }
+}
