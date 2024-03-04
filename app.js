@@ -7,18 +7,14 @@ function submitTextToTextArea(){
 
 }
 
-function downloadTextAreaContent() {
-    const content = document.getElementById('textarea').value;
 
-    // Convert the textarea content to a Word file
-    mammoth.convertText(content, {contentType: 'text'}).then(function(result) {
-        const blob = new Blob([result.value], {type: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'});
-        const anchor = document.createElement('a');
-        anchor.download = 'textarea_content.docx';
-        anchor.href = window.URL.createObjectURL(blob);
-        anchor.click();
-    }).catch(function(err) {
-        console.log(err);
-    });
+function downloadTextAreaContent() {
+
+    const content = document.getElementById('textarea').value;
+    const docx = htmlDocx.asBlob(content);
+    const anchor = document.createElement('a');
+    anchor.download = 'daily_activity_report.docx';
+    anchor.href = window.URL.createObjectURL(docx);
+    anchor.click();
 }
 
