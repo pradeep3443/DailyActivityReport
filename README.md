@@ -23,7 +23,7 @@ This application helps security guards generate daily activity reports easily.
 - JavaScript
 
 ### Demo
-Check out the demo (link-to-demo).
+Check out the demo https://daliy-activity-report-generator.netlify.app/.
 
 ### Feedback
 Your feedback is valuable! Feel free to open an issue or reach out with any suggestions or issues.
